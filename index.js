@@ -1,7 +1,12 @@
 const express = require('express')
 const app = express()
+//for connection to frontend
+const cors = require('cors')
+
 
 app.use(express.json())
+//using the cors middleware
+app.use(cors())
 
 //data
 let persons = [
